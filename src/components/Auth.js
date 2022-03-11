@@ -11,6 +11,7 @@ const Auth = () => {
     e.preventDefault();
     dispatch(authActions.userLogIn());
   };
+
   return (
     <div className="container">
       <h1>Login</h1>{" "}
