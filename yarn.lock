@@ -3108,6 +3108,11 @@ cosmiconfig@^7.0.0, cosmiconfig@^7.0.1:
     path-type "^4.0.0"
     yaml "^1.10.0"
 
+cra-template-redux@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/cra-template-redux/-/cra-template-redux-1.0.3.tgz#4933e4610d81e832016967a199e036a7cfebf891"
+  integrity sha512-o7Wz0W7aBhvFgH1H0DEinoqb/7487hce0TlMSBy5RnpXflN9CZoDHZUUBLxCKMULhdvx7a3FtV+3RrKXgjy6hQ==
+
 cross-spawn@^7.0.2, cross-spawn@^7.0.3:
   version "7.0.3"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-7.0.3.tgz#f73a85b9d5d41d045551c177e2882d4ac85728a6"
