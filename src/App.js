@@ -1,12 +1,16 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import Auth from "./components/Auth";
 import Layout from "./components/Layout";
 
 const App = () => {
+  const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
+
+  console.log(isLoggedIn);
   return (
     <div>
-      {/* <Auth /> */}
-      <Layout />
+      {!isLoggedIn && <Auth />}
+      {isLoggedIn && <Layout />}
     </div>
   );
 };
