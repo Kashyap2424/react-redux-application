@@ -6,7 +6,6 @@ import Layout from "./components/Layout";
 const App = () => {
   const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
 
-  console.log(isLoggedIn);
   return (
     <div>
       {!isLoggedIn && <Auth />}
