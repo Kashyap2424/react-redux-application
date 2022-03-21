@@ -4,7 +4,7 @@ const cartSlice = createSlice({
   name: "cart",
   initialState: {
     itemList: [],
-    totalQauntity: 0,
+    totalQuantity: 0,
     showCart: false,
   },
   reducers: {
@@ -18,15 +18,16 @@ const cartSlice = createSlice({
 
       if (existingItem) {
         existingItem.quantity++;
-        existingItem.price += newItems.price;
+        existingItem.totalPrice += newItems.price;
       } else {
         state.itemList.push({
           id: newItems.id,
           price: newItems.price,
           quantity: 1,
-          totalQauntity: newItems.price,
+          totalPrice: newItems.price,
           name: newItems.name,
         });
+        state.totalQuantity++;
       }
     },
     itemsRemoveFormCart() {},
@@ -36,6 +37,6 @@ const cartSlice = createSlice({
   },
 });
 
-export const cartAction = cartSlice.actions;
+export const cartActions = cartSlice.actions;
 
 export default cartSlice;
